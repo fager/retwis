@@ -1,6 +1,14 @@
 <?php
 require 'Predis/Autoloader.php';
 Predis\Autoloader::register();
+require_once('./config.php');
+
+function exception_handler($exception) {
+  $msg = "Nicht aufgefangene Exception: " . $exception->getMessage();
+  trigger_error($msg,E_USER_ERROR);
+}
+
+set_exception_handler('exception_handler');
 
 function getrand() {
     $fd = fopen("/dev/urandom","r");
@@ -37,9 +45,10 @@ function loadUserInfo($userid) {
 
 function redisLink() {
     static $r = false;
+    global $redis_options;
 
     if ($r) return $r;
-    $r = new Predis\Client();
+    $r = new Predis\Client($redis_options);
     return $r;
 }
 
