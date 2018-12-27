@@ -1,4 +1,4 @@
-<?
+<?php
 include("retwis.php");
 
 # Form sanity checks

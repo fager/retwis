@@ -1,4 +1,4 @@
-<?
+<?php
 include("retwis.php");
 
 $r = redisLink();

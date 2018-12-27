@@ -1,4 +1,4 @@
-<?
+<?php
 include("retwis.php");
 
 if (!isLoggedIn() || !gt("status")) {

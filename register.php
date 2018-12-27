@@ -1,4 +1,4 @@
-<?
+<?php
 include("retwis.php");
 
 # Form sanity checks
@@ -33,6 +33,6 @@ include("header.php");
 ?>
 <h2>Welcome aboard!</h2>
 Hey <?=utf8entities($username)?>, now you have an account, <a href="index.php">a good start is to write your first message!</a>.
-<?
+<?php
 include("footer.php")
 ?>

@@ -1,4 +1,4 @@
-<?
+<?php
 include("retwis.php");
 include("header.php");
 
@@ -17,7 +17,7 @@ if (isLoggedIn() && $User['id'] != $userid) {
     }
 }
 ?>
-<?
+<?php
 $start = gt("start") === false ? 0 : intval(gt("start"));
 showUserPostsWithPagination(gt("u"),$userid,$start,10);
 include("footer.php")
