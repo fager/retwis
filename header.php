@@ -9,5 +9,6 @@
 <div id="page">
 <div id="header">
 <a href="/"><img style="border:none" src="logo.png" width="192" height="85" alt="Retwis"></a>
+<?php echo gethostname(); ?>
 <?php include("navbar.php") ?>
 </div>
