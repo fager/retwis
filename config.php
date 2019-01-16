@@ -20,7 +20,7 @@ $redis_options["host"] = get_cfg_from_env("REDIS_OPTIONS_HOST","localhost");
 $redis_options["port"] = get_cfg_from_env("REDIS_OPTIONS_PORT",6379);
 $redis_options["password"] = get_cfg_from_env("REDIS_OPTIONS_PASSWORD","password");
 
-$redis_title = get_cfg_from_env("REDIS_TITLE","");
+$retwis_title = get_cfg_from_env("RETWIS_TITLE","");
 
 // read configuration from file if exists ...
 if( is_file("./.htconfig.php") ) {
