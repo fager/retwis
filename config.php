@@ -3,7 +3,7 @@
 
 
 function get_cfg_from_env($name, $default='') {
-  $ret = null;
+  $ret = $default;
   $tmp = getenv($name);
   if( isset($tmp) and $tmp != '' ) {
     $ret = $tmp;
